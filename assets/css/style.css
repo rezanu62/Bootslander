@@ -1,0 +1,337 @@
+:root {
+  --text-green: #1acc8d;
+  --btn-bg: #1acc8d;
+  --bg-light-green: #f3fcf9;
+  --heading-color: #040677;
+  --border-green: #1acc8d;
+  --bg-green: #1acc8d;
+  --border-green: #1acc8d;
+  --hover-btn-bg: #35eeae;
+  --padding-top: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color) !important;
+}
+
+/*--------------------------------------------------
+Header Section 
+----------------------------------------------------*/
+nav {
+  background: rgb(2, 5, 161);
+  z-index: 500;
+}
+
+/* --------------------------------------------------
+Hero Section 
+-----------------------------------------------------*/
+.hero-section {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/hero-bg.jpg);
+}
+
+.hero-section:before {
+  content: "";
+  background: rgba(2, 5, 161, 0.91);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-section__content {
+  color: white;
+  background-color: initial;
+}
+
+.hero-section__title,
+.hero-section__description {
+  color: lightgrey !important;
+}
+
+.hero-section__title {
+  font-size: 48px;
+}
+
+.hero-section__animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.get-started-btn {
+  color: white;
+  background-color: var(--btn-bg);
+}
+
+.get-started-btn:hover {
+  background-color: var(--btn-bg);
+}
+
+.watch-video-btn:hover {
+  color: var(--text-green) !important;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*--------------------------------------------------- 
+Feactures Section 
+-----------------------------------------------------*/
+.features-section {
+  padding-top: var(--padding-top);
+}
+
+.features-section__card:hover {
+  border: 1px solid var(--border-green) !important;
+}
+
+/*---------------------------------------------------- 
+Team Performance 
+------------------------------------------------------*/
+
+.team-performance-section {
+  background-color: #f4f5fe !important;
+  margin: 120px 0px;
+}
+
+.team-performance-section i {
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+  margin-top: -45px;
+  margin-bottom: 20px;
+  color: var(--text-green);
+}
+
+
+/* --------------------------------------------------
+About Section 
+-----------------------------------------------------*/
+.about-section {
+  padding-top: var(--padding-top);
+}
+
+.about-section__label,
+.icon-box {
+  background-color: var(--bg-light-green);
+  color: var(--text-green);
+}
+
+.about-section__label {
+  width: fit-content;
+}
+
+.about-section__btn,
+.about-section__btn:hover {
+  background-color: var(--btn-bg);
+  color: white;
+}
+
+.icon-box {
+  width: 90px;
+  height: 90px;
+}
+
+.icon-box:hover {
+  background-color: var(--bg-green);
+  color: white;
+}
+
+/*------------------------------------------------- 
+Testimonials Section
+--------------------------------------------------*/
+.testimonials-section {
+  background-image: url('../images/cta-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0px;
+}
+
+/*--------------------------------------------------
+Team Section 
+----------------------------------------------------*/
+
+.team-section {
+  padding-top: var(--padding-top);
+}
+
+.team-section__member {
+  margin-top: -40px;
+}
+
+.team-section__member i {
+  color: gainsboro;
+}
+
+.team-section__member i:hover {
+  color: var(--text-green);
+}
+
+/*---------------------------------------------------
+ Pricing Section 
+----------------------------------------------------*/
+.pricing-section {
+  padding-top: var(--padding-top);
+}
+
+.pricing-section__card {
+  border: 1px solid var(--border-green) !important;
+}
+
+.pricing-section__button {
+  border: 1px solid black;
+  color: black !important;
+}
+
+.pricing-section__button--active {
+  border: none;
+  background-color: var(--bg-green);
+}
+
+.pricing-section__button--active:hover,
+.pricing-section__button:hover {
+  background-color: var(--hover-btn-bg);
+}
+
+.check-icon {
+  color: var(--text-green);
+}
+
+.x-mark-icon {
+  color: red;
+}
+
+/*---------------------------------------------------- 
+Gallery Section 
+------------------------------------------------------*/
+
+.gallery-section {
+  padding-top: var(--padding-top);
+}
+
+/*---------------------------------------------------- 
+Question Section 
+------------------------------------------------------*/
+
+.question-section {
+  margin-top: 100px;
+  background-color: #f4f5fe;
+}
+
+.question-section__question:hover {
+  color: var(--text-green);
+}
+
+.question-section__question > span {
+  color: var(--text-green);
+  height: 25px;
+  width: 25px;
+  border: 2px solid var(--border-green);
+}
+
+/*--------------------------------------------------
+ Contact Section
+---------------------------------------------------- */
+.contact-section {
+  padding-top: var(--padding-top);
+}
+
+.contact-section__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-green);
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: var(--bg-light-green);
+}
+
+.contact-section__send-btn {
+  background-color: var(--btn-bg);
+  width: fit-content;
+  margin: 20px auto;
+  color: white;
+}
+
+.contact-section__send-btn:hover {
+  background-color: var(--hover-btn-bg);
+  color: white;
+}
+
+.line {
+  width: 130px;
+  border: 1px solid var(--border-green);
+}
+
+/* --------------------------------------------------
+Footer Section 
+-----------------------------------------------------*/
+
+.footer-section {
+  margin-top: var(--padding-top);
+  background: rgba(2, 5, 161, 0.91);
+}
+
+.footer-section__email-field {
+  border: 1px solid var(--border-green);
+}
+
+.footer-section__subscribe-btn {
+  background-color: var(--btn-bg);
+  color: white;
+}
+
+.footer-section__subscribe-btn:hover {
+  background-color: var(--hover-btn-bg);
+}
+
+.list-unstyled li a {
+  text-decoration: none;
+  color: lightgray !important;
+}
+
+.footer-section__main-content {
+  padding: 50px 0px 50px 0px;
+}
+
+button.chat-button {
+  height: 70px;
+  width: 70px;
+  font-size: 30px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #1317a5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 575px) {
+  .hero-section__title {
+    font-size: 30px;
+  }
+
+  .question-section {
+    padding: 12px !important;
+  }
+}
